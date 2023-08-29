@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Introduction to Programming Lab 3</title>
+    </head>
+
+    <link rel="stylesheet" href="style2.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <body>
+        <header>
+            <h1>Introduction to Website Development</h1>
+            <p class="course-description">
+                Website development using HTML, CSS, and JavaScript involves creating interactive and
+                visually appealing websites.
+            </p>
+        </header>
+
+        <nav>
+            <a href="#about">About the Course</a>
+            <a href="#outline">Course Outline</a>
+            <a href="#instructors">Instructors</a>
+        </nav>
+
+        <div class="bgvideo">
+            <video autoplay muted loop>
+                <source src="video1.mp4">
+            </video>
+        </div>
+
+        <section id="about" class="section-container">
+            <h2>About the Course</h2>
+            <p>Web development refers to the process of creating and maintaining websites and web applications that are
+                accessible via the internet. It involves a combination of various technologies, programming languages,
+                frameworks, and tools to build the structure, design, functionality, and interactivity of websites.
+            </p>
+            <h2>Course Objectives:</h2>
+            <ul>
+                <li>To inculcate understanding of World Wide Web, Internet, the concepts of web applications
+                    development and web programming languages.</li>
+                <li>To introduce selection of appropriate concepts of internet and web programming such as HTML,
+                    CSS, JavaScript, and other server-side scripting languages.</li>
+                <li>To infuse skills of combining different components and technologies to design a web application
+                    for real world problem</li>
+                <li>
+                    Test the components of WWW, HTML tags, CSS properties, client-side and server-side programming
+                    concepts, web data representation formats and AJAX components using different web development
+                    tools.
+                </li>
+            </ul>
+            <h2>Target Audience:</h2>
+            <ul>
+                <li><span style="color: red;">Beginners & Enthusiasts</span>: Individuals with little to no coding
+                    experience who want to learn the
+                    basics of building websites using HTML, CSS, and JavaScript.
+                </li>
+                <li><span style="color: red;">Career Switchers</span>: Professionals from other fields looking to
+                    transition into web development,
+                    seeking a comprehensive course covering both front-end and back-end technologies.</li>
+                <li>
+                    <span style="color: red;">Designers & Freelancers</span>: Graphic designers and freelancers
+                    aiming to expand their skill set by
+                    acquiring front-end development abilities to create interactive web interfaces.
+                </li>
+            </ul>
+        </section>
+
+        <section id="outline" class="section-container">
+            <h2>Course Outline</h2>
+            <ul>
+                <li>Module 1 : Introduction to World Wide Web</li>
+                <li>Module 2 : Markup Languages and Building Web Pages</li>
+                <li>Module 3 : Style sheet Languages and Presentation of Web Pages</li>
+                <li>Module 4 : Client-side Programming</li>
+                <li>Module 5 : Server-side Programming</li>
+                <li>Module 6 : Representation of Web Data, AJAX and Web Security</li>
+            </ul>
+        </section>
+
+        <section id="instructors" class="section-container">
+            <h2>Instructor 1</h1>
+                <div class="instructor-card">
+                    <img src="image.jpg" alt="Instructor 1">
+                    <h3 style="text-align: center;"><b>Aftab Bhadgaonkar</b></h3>
+                    <p>"Frontend developer crafting captivating user interfaces through elegant code and interactive
+                        design. Skilled in transforming user needs into intuitive web experiences using modern
+                        technologies."</p>
+                </div>
+                <h2>Instructor 2</h2>
+                <div class="instructor-card">
+                    <img src="image2.jpg" alt="Instructor 2">
+                    <h3 style="text-align: center;"><b>Manish Barage</b></h3>
+                    <p>"Backend developer architecting server-side solutions for seamless digital experiences.
+                        Proficient in optimizing databases, deploying APIs, and ensuring robust system functionality."
+                    </p>
+                </div>
+        </section>
+
+        <div class="go-to-top" onclick="scrollToTop()">
+            <img src="up.png">
+        </div>
+
+        <footer>
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>follow us</h4>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <p>&copy; 2023 Programming Lab 3. All rights reserved.</p>
+        </footer>
+        <script>
+            function scrollToTop() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+            // Show/hide the "Go to Top" button based on scroll position
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 200) {
+                    document.querySelector('.go-to-top').style.display = 'block';
+                } else {
+                    document.querySelector('.go-to-top').style.display = 'none';
+                }
+            });
+        </script>
+    </body>
+
+</html>
